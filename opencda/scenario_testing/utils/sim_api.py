@@ -179,8 +179,9 @@ class ScenarioManager:
             new_settings.fixed_delta_seconds = \
                 simulation_config['fixed_delta_seconds']
         else:
-            sys.exit(
-                'ERROR: Current version only supports sync simulation mode')
+            # sys.exit(
+            #     'ERROR: Current version only supports sync simulation mode')
+            print('async_mode')
 
         self.world.apply_settings(new_settings)
 
