@@ -6,7 +6,7 @@ description: |-
 
 # define carla simulation setting
 world:
-  sync_mode: true
+  sync_mode: false
   client_port: 2000
   fixed_delta_seconds: &delta 0.05
   seed: 11
@@ -105,7 +105,7 @@ vehicle_base: &vehicle_base
 
 # define the background traffic control by carla
 carla_traffic_manager:
-  sync_mode: true # has to be same as the world setting
+  sync_mode: false # has to be same as the world setting
   global_distance: 5 # the minimum distance in meters that vehicles have to keep with the rest
   # Sets the difference the vehicle's intended speed and its current speed limit.
   #  Carla default speed is 30 km/h, so -100 represents 60 km/h,
